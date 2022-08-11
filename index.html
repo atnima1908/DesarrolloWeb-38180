@@ -2,45 +2,53 @@
 <html lang="en">
 
 <head>
-    <!--REQUIRED META TAGS START---------------------------------------------------------------------------------------->
+    <!--REQUIRED META TAGS---------------------------------------------------------------------------------------->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>INDEX</title>
 
-    <!--BOOTSTRAP & CSS START----------------------------------------------------------------------------------------->
+    <!--BOOTSTRAP & CSS INCICIO----------------------------------------------------------------------------------------->
 
-    <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <!-- <link rel="stylesheet" href="./CSS/font-awesome.css"> -->
-    <link rel="stylesheet" href="./ICONS/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-
+    <!--BOOTSTRAP & CSS FINAL----------------------------------------------------------------------------------------->
 
 </head>
 
 <body>
     <!--NAV BAR INICIO------------------------------------------------------------------------------------------------------------------------->
 
+
     <nav class="top">
-        <label class="logo">Alma Digital</label>
-        <ul class="topUl">
-            <li><a href="./PAGES/tools.html">Toolkit</a></li>
-            <li><a href="./PAGES/servicios.html">Servicios</a></li>
-            <li><a href="./PAGES/portafolio.html">Portafolio</a></li>
-            <li><a href="./PAGES/contacto.html">Contacto</a></li>
-        </ul>
+        <div class="header">
+            <label class="logo">Alma<span>Digital</span></label>
+            <div class="header-right">
+                <ul class="topUl">
+                    <li><a href="index.html" class="selected">HOME</a></li>
+                    <li><a href="./pages/tools.html">Toolkit</a></li>
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li><a href="./pages/portafolio.html">Portafolio</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
     <nav class="bottom">
         <ul class="bottomUl">
-            <li class="SERVICIOS"><a href="./PAGES/servicios.html"><i class="fas fa-book"></i></a></li>
-            <li class="TOOLS"><a href="./PAGES/tools.html"><i class="fa-solid fa-tools"></i></a></li>
+            <li class="SERVICIOS"><a href="./pages/servicios.html"><i class="fas fa-book"></i></a></li>
+            <li class="TOOLS"><a href="./pages/tools.html"><i class="fa-solid fa-tools"></i></a></li>
             <li class="HOME"><a href="index.html"><i class="fas fa-home"></i></a></li>
             <li class="PORTAFOLIO"><a href="./PAGES/portafolio.html"><i class="fas fa-code"></i></a></li>
-            <li class="CONTACTO"><a href="./PAGES/contacto.html"><i class="fas fa-message"></i></a></li>
+            <li class="CONTACTO"><a href="./pages/contacto.html"><i class="fas fa-message"></i></a></li>
         </ul>
     </nav>
+
+
     <!-- NAV BAR FINAL------------------------------------------------------------------------------------------------------------------------->
 
 
@@ -102,9 +110,9 @@
             </div>
         </div>
         <a href="#" class="bottom-0 end-0 p-3">
-        <a href="#" class="bottom-0 end-0 p-3">
-            <i class="bi bi-arrow-up-circle h1"></i>
-        </a>
+            <a href="#" class="bottom-0 end-0 p-3">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
     </footer>
     <div class="copyright">
         Copyright &copy; 2022 - Diseño Web Realizado por <span>Aminta S. Largaespada</span>
@@ -114,55 +122,6 @@
 
     <!--------------------------------------------------------------------------------------------------------------------------->
 
-    <!-- BOOTSTRAP JS START -->
-    <script src="./JS/script.js"></script>
-    <script src="./JS/bootstrap.js"></script>
-    <script src="./JS/bootstrap.bundle.js"></script>
-    <script src="./JS/jquery.js"></script>
-    <script src="./JS/owl_carousel.js"></script>
-    <script src="./ICONS/node_modules/@popperjs/core/lib/popper.js"></script>
-    <!-- BOOTSTRAP JS END -->
-
-    <!-- CAROUSEL SETTINGS START-->
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel();
-        })
-    </script>
-
-    <!-- CAROUSEL COMANDOS + RESPONSIVE START-->
-    <script>$(".owl-carousel").owlCarousel({
-            autoplay: true,
-            autoplayhoverpause: true,
-            autoplaytimeout: 100,
-            items: 3,
-            loop: true,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    dots: false,
-                },
-                485: {
-                    items: 2,
-                    dots: false,
-                },
-                728: {
-                    items: 3,
-                    dots: false,
-                },
-                960: {
-                    items: 3,
-                    dots: false,
-                },
-                1200: {
-                    items: 4,
-                    dots: true,
-                }
-            }
-        });
-    </script>
-    <!-- CAROUSEL + RESPONSIVE END-->
 
 </body>
 
