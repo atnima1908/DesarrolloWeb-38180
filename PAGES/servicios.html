@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--REQUIRED META TAGS---------------------------------------------------------------------------------------->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INDEX</title>
+
+  <!--BOOTSTRAP & CSS INCICIO----------------------------------------------------------------------------------------->
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/owl.carousel.css">
+
+
+  <!--BOOTSTRAP & CSS FINAL----------------------------------------------------------------------------------------->
+
+</head>
+
+<body>
+  <!--NAV BAR INICIO------------------------------------------------------------------------------------------------------------------------->
+
+
+  <nav class="top">
+    <div class="header">
+      <label class="logo">Alma Digital</label>
+      <div class="header-right">
+        <ul class="topUl">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="tools.html">Toolkit</a></li>
+          <li><a href="servicios.html" class="selected">Servicios</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="bottom">
+    <ul class="bottomUl">
+      <li class="SERVICIOS"><a href="servicios.html"><i class="fas fa-book"></i></a></li>
+      <li class="TOOLS"><a href="tools.html"><i class="fa-solid fa-tools"></i></a></li>
+      <li class="HOME"><a href="../index.html"><i class="fas fa-home"></i></a></li>
+      <li class="PORTAFOLIO"><a href="portafolio.html"><i class="fas fa-code"></i></a></li>
+      <li class="CONTACTO"><a href="contacto.html"><i class="fas fa-message"></i></a></li>
+    </ul>
+  </nav>
+
+
+  <!-- NAV BAR FINAL------------------------------------------------------------------------------------------------------------------------->
+
+  <div class="banner-servicios p-5 pb-0">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+
+
+        <div class="col-md order-1 order-md-2">
+          <img src="../ASSETS/A.jpg" class="img-fluid" alt="">
+        </div>
+
+
+        <div class="col-md text-center p-5 order-2 order-md-1">
+          <h1 class="titulo">¿Tienes un proyecto <span>proyecto</span> en mente?</h1>
+          <p class="lead my-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minima
+            tempora expedita? Ullam
+            sed totam voluptates ea adipisci distinctio laborum?</p>
+          <button id="btn" class="btn btn-lg" type="button" data-bs-toggle="modal"
+            data-bs-target="#modal">¡Contactanos!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL BANNER START -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Cuentanos de tu idea! ¡Queremos escucharte!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">¡Pongámonos en contacto!</p>
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control" id="floating-name" placeholder="full-name">
+            <label for="floating-name">Nombre Completo</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floating-email" placeholder="email">
+            <label for="floating-email">Correo Electronico</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="phone-number" class="form-control" id="floating-email" placeholder="phone-number">
+            <label for="floating-phone-number">Numero Telefonico</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Cuentanos sobre tu idea o negocio</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+          <button type="button" class="btn btn-info">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL BANNER END -->
+
+  <!--SERVICIOS CARDS------------------------------------------------------------------------------------------------------------------------->
+
+  <div class="wrapper-grid">
+
+    <div class="container-servicios ">
+      <!-- <div class='banner-img'></div> -->
+      <img src='../ASSETS/branding.jpg' alt='profile image' class="img-servicios">
+      <h1 class="name">BRANDING</h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ducimus. Architecto
+        error nobis exercitationem facilis ullam. Obcaecati itaque hic maiores.</p>
+      <button id="modal-branding" class='btn-servicios' type="button" data-bs-toggle="modal"
+        data-bs-target="#modal">Quieres
+        saber mas?</button>
+    </div>
+
+    <div class="container-servicios ">
+      <div class='banner-img'></div>
+      <img src='../ASSETS/front_end.jpg' alt='profile image' class="img-servicios">
+      <h1 class="name">FRONTEND</h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ducimus. Architecto
+        error nobis exercitationem facilis ullam. Obcaecati itaque hic maiores.</p>
+      <button id="modal-frontend" class='btn-servicios' type="button" data-bs-toggle="modal"
+        data-bs-target="#modal">Quieres
+        saber mas?</button>
+    </div>
+
+    <div class="container-servicios ">
+      <div class='banner-img'></div>
+      <img src='../ASSETS/UX.jpg' alt='profile image' class="img-servicios">
+      <h1 class="name">DISEÑO UX/UI</h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ducimus. Architecto
+        error nobis exercitationem facilis ullam. Obcaecati itaque hic maiores.</p>
+      <button id="modal-uxui" class='btn-servicios' type="button" data-bs-toggle="modal" data-bs-target="#modal">Quieres
+        saber mas?</button>
+    </div>
+
+    <div class="container-servicios ">
+      <div class='banner-img'></div>
+      <img src='../ASSETS/mas.jpg' alt='profile image' class="img-servicios">
+      <h1 class="name">MAS</h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ducimus. Architecto
+        error nobis exercitationem facilis ullam. Obcaecati itaque hic maiores.</p>
+      <button id="modal-mas" class='btn-servicios' type="button" data-bs-toggle="modal" data-bs-target="#modal">Quieres
+        saber mas?</button>
+    </div>
+  </div>
+
+  <!--MODAL PARA LOS SERVICIOS------------------------------------------------------------------------------------------------------------------------->
+
+  <!-- MODAL SECTION START -->
+  <!-- UX/UI -->
+  <div class="modal fade" id="modal-uxui" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Cuentanos de tu idea! ¡Queremos escucharte!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">¡Pongámonos en contacto!</p>
+          <!-- FORM START -->
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control" id="floating-name" placeholder="full-name">
+            <label for="floating-name">Nombre Completo</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floating-email" placeholder="email">
+            <label for="floating-email">Correo Electronico</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="phone-number" class="form-control" id="floating-email" placeholder="phone-number">
+            <label for="floating-phone-number">Numero Telefonico</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Cuentanos sobre tu idea o negocio</label>
+          </div>
+          <!-- FORM END -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+          <button type="button" class="btn btn-info">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FRONTEND -->
+  <div class="modal fade" id="modal-frontend" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Cuentanos de tu idea! ¡Queremos escucharte!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">¡Pongámonos en contacto!</p>
+          <!-- FORM START -->
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control" id="floating-name" placeholder="full-name">
+            <label for="floating-name">Nombre Completo</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floating-email" placeholder="email">
+            <label for="floating-email">Correo Electronico</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="phone-number" class="form-control" id="floating-email" placeholder="phone-number">
+            <label for="floating-phone-number">Numero Telefonico</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Cuentanos sobre tu idea o negocio</label>
+          </div>
+          <!-- FORM END -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+          <button type="button" class="btn btn-info">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- BRANDIGN -->
+  <div class="modal fade" id="modal-branding" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Cuentanos de tu idea! ¡Queremos escucharte!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">¡Pongámonos en contacto!</p>
+          <!-- FORM START -->
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control" id="floating-name" placeholder="full-name">
+            <label for="floating-name">Nombre Completo</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floating-email" placeholder="email">
+            <label for="floating-email">Correo Electronico</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="phone-number" class="form-control" id="floating-email" placeholder="phone-number">
+            <label for="floating-phone-number">Numero Telefonico</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Cuentanos sobre tu idea o negocio</label>
+          </div>
+          <!-- FORM END -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+          <button type="button" class="btn btn-info">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MAS -->
+  <div class="modal fade" id="modal-mas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Cuentanos de tu idea! ¡Queremos escucharte!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">¡Pongámonos en contacto!</p>
+          <!-- FORM START -->
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control" id="floating-name" placeholder="full-name">
+            <label for="floating-name">Nombre Completo</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floating-email" placeholder="email">
+            <label for="floating-email">Correo Electronico</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="phone-number" class="form-control" id="floating-email" placeholder="phone-number">
+            <label for="floating-phone-number">Numero Telefonico</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Cuentanos sobre tu idea o negocio</label>
+          </div>
+          <!-- FORM END -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+          <button type="button" class="btn btn-info">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL SECTION END -->
+  <div class="bottom-servicios"> </div>
+  <!--------------------------------------------------------------------------------------------------------------------------->
+
+  <!-- FOOTER SECTION START -->
+  <footer class="footer" id="scrollspy-footer" class=" p-3 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <div class="social-media">
+        <i class="icon fa-brands fa-instagram"></i>
+        <i class="icon fa-brands fa-facebook"></i>
+        <i class="icon fa-brands fa-twitter"></i>
+        <i class="icon fa-brands fa-github"></i>
+        <i class="icon fa-brands fa-linkedin"></i>
+        <i class="icon fa-solid fa-at"></i>
+      </div>
+    </div>
+    <a href="#" class="bottom-0 end-0 p-3">
+      <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+  </footer>
+  <div class="copyright">
+    Copyright &copy; 2022 - Diseño Web Realizado por <span>Aminta S. Largaespada</span>
+  </div>
+
+  <!-- FOOTER END -->
+
+  <!--------------------------------------------------------------------------------------------------------------------------->
+
+</body>
+
+</html>
