@@ -17,14 +17,12 @@
   
   .titulo {
     font-size: 30px;
-  }
-  
-  .titulo span {
-    color: var(--amarillo);
+    span {
+        color: var(--amarillo);
+      }
   }
   
   .container-servicios {
-  
     overflow: hidden;
     box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
     background-color: white;
@@ -32,10 +30,9 @@
     border-radius: 1rem;
     position: relative;
     margin: 0.5rem;
-  }
-  
-  .container-servicios img {
-    height: 300px;
+    img {
+        height: 300px;
+      }
   }
   
   .name {

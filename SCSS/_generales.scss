@@ -51,11 +51,11 @@
     padding: 0 10px;
     cursor: pointer;
     padding: 10px;
+    &:hover {
+        background-color: var(--amarillo);
+        color: var(--azul);
+        font-weight: bold;
+        transition: 0.8s;
+      }
   }
   
-  #btn:hover {
-    background-color: var(--amarillo);
-    color: var(--azul);
-    font-weight: bold;
-    transition: 0.8s;
-  }
