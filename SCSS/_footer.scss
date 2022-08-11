@@ -1,0 +1,47 @@
+.footer {
+    background-color: #06919a;
+    display: flex;
+    /* text-align: center; */
+  }
+  
+  .social-media .icon {
+    height: 40px;
+    width: 40px;
+    background-color: #14213d;
+    color: #fff;
+    margin: 10px 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 15px;
+  }
+  
+  .icon:hover {
+    background-color: #fff;
+    color: #06919a;
+    transition: 0.8s;
+  }
+  
+  
+  #scrollspy-footer .bi {
+    background-color: var();
+    color: var(--amarillo);
+    margin: 10px 10px;
+  }
+  
+  /* COPYRIGHT- REVISADO */
+  
+  .copyright {
+    background-color: #06919a;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    border-top: 1px solid #FFF;
+    color: #FFF;
+  }
+  
+  .copyright span {
+    color: #FCA311;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,61 @@
+/* -----------------CORE STYLES INCIO---------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+
+  
+  body {
+  
+    font-family: arial;
+    background-color: white;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  #btn {
+    list-style: none;
+    background-color: var(--azul);
+    color: var(--amarillo);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s;
+    justify-content: space-around;
+    padding: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  #btn:hover {
+    background-color: var(--amarillo);
+    color: var(--azul);
+    font-weight: bold;
+    transition: 0.8s;
+  }

@@ -1,0 +1,60 @@
+
+  
+  .banner-servicios img {
+    width: 500px;
+    height: 500px;
+  }
+  
+  
+  /* CARD */
+  .wrapper-grid {
+    background-color: var(--azul);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .titulo {
+    font-size: 30px;
+  }
+  
+  .titulo span {
+    color: var(--amarillo);
+  }
+  
+  .container-servicios {
+  
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+  
+  .container-servicios img {
+    height: 300px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn-servicios {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--azul);
+    padding: 1rem;
+    background-color: var(--amarillo);
+  }
+  

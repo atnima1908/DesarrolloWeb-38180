@@ -1,3 +1,10 @@
+:root {
+  --azul: #14213d;
+  --cyan: #06919a;
+  --amarillo: #FCA311;
+  --primario: #fff;
+  --titulo: arial; }
+
 /* -----------------CORE STYLES INCIO---------------------------------------------*/
 * {
   margin: 0;
@@ -5,13 +12,6 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box; }
-
-:root {
-  --azul: #14213d;
-  --cyan: #06919a;
-  --amarillo: #FCA311;
-  --primario: #fff;
-  --titulo: arial; }
 
 body {
   font-family: arial;
@@ -55,7 +55,45 @@ li {
   font-weight: bold;
   transition: 0.8s; }
 
-/* -----------------CORE STYLE FINAL----------------- NAV BAR & TAP BAR INCIO------------------*/
+.footer {
+  background-color: #06919a;
+  display: flex;
+  /* text-align: center; */ }
+
+.social-media .icon {
+  height: 40px;
+  width: 40px;
+  background-color: #14213d;
+  color: #fff;
+  margin: 10px 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 15px; }
+
+.icon:hover {
+  background-color: #fff;
+  color: #06919a;
+  transition: 0.8s; }
+
+#scrollspy-footer .bi {
+  background-color: var();
+  color: var(--amarillo);
+  margin: 10px 10px; }
+
+/* COPYRIGHT- REVISADO */
+.copyright {
+  background-color: #06919a;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  border-top: 1px solid #FFF;
+  color: #FFF; }
+
+.copyright span {
+  color: #FCA311;
+  font-weight: bold; }
+
 /* NAV BAR TOP - DESKTOP  */
 .top {
   overflow: hidden;
@@ -169,48 +207,6 @@ li {
   border: 3px solid var(--amarillo);
   transition: all 0.3s; }
 
-/* ----------------- NAV BAR & TAP BAR FINAL----------------- FOOTER & COPYRIGHT INCIO-----------------*/
-/* FOOTER - REVISADO */
-.footer {
-  background-color: #06919a;
-  display: flex;
-  /* text-align: center; */ }
-
-.social-media .icon {
-  height: 40px;
-  width: 40px;
-  background-color: #14213d;
-  color: #fff;
-  margin: 10px 10px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  margin: 15px; }
-
-.icon:hover {
-  background-color: #fff;
-  color: #06919a;
-  transition: 0.8s; }
-
-#scrollspy-footer .bi {
-  background-color: var();
-  color: var(--amarillo);
-  margin: 10px 10px; }
-
-/* COPYRIGHT- REVISADO */
-.copyright {
-  background-color: #06919a;
-  text-align: center;
-  padding: 5px;
-  font-size: 14px;
-  border-top: 1px solid #FFF;
-  color: #FFF; }
-
-.copyright span {
-  color: #FCA311;
-  font-weight: bold; }
-
-/* ----------------- FOOTER & COPYRIGHT FINAL----------------- HOME INCIO-----------------*/
 .container-home h1 span {
   color: var(--amarillo); }
 
@@ -236,7 +232,6 @@ li {
   background-color: #FCA311;
   color: #Fff; }
 
-/* ----------------- HOME FINAL----------------- CAROUSEL INCIOO-----------------*/
 .banner-portafolio {
   background-color: var(--primario); }
 
@@ -286,7 +281,53 @@ li {
   background-color: var(--azul);
   color: var(--primario); }
 
-/* ----------------- CAROUSEL FINAL----------------- CONTACTO INCIO-----------------*/
+.banner-servicios img {
+  width: 500px;
+  height: 500px; }
+
+/* CARD */
+.wrapper-grid {
+  background-color: var(--azul);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+  padding: 30px; }
+
+.titulo {
+  font-size: 30px; }
+
+.titulo span {
+  color: var(--amarillo); }
+
+.container-servicios {
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+  background-color: white;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  margin: 0.5rem; }
+
+.container-servicios img {
+  height: 300px; }
+
+.name {
+  font-weight: bold;
+  font-size: 1.5rem; }
+
+.description {
+  margin: 1rem 2rem;
+  font-size: 0.9rem; }
+
+.btn-servicios {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--azul);
+  padding: 1rem;
+  background-color: var(--amarillo); }
+
 .container {
   max-width: 1170px;
   margin-left: auto;
@@ -358,55 +399,6 @@ ul {
   outline: 0;
   transition: background-color 0.3s ease-out; }
 
-/* ----------------- CONTACTO FINAL----------------- SERVICIOS INICIO -----------------*/
-.banner-servicios img {
-  width: 500px;
-  height: 500px; }
-
-/* CARD */
-.wrapper-grid {
-  background-color: var(--azul);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 20rem);
-  justify-content: center;
-  padding: 30px; }
-
-.titulo {
-  font-size: 30px; }
-
-.titulo span {
-  color: var(--amarillo); }
-
-.container-servicios {
-  overflow: hidden;
-  box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
-  background-color: white;
-  text-align: center;
-  border-radius: 1rem;
-  position: relative;
-  margin: 0.5rem; }
-
-.container-servicios img {
-  height: 300px; }
-
-.name {
-  font-weight: bold;
-  font-size: 1.5rem; }
-
-.description {
-  margin: 1rem 2rem;
-  font-size: 0.9rem; }
-
-.btn-servicios {
-  width: 100%;
-  border: none;
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--azul);
-  padding: 1rem;
-  background-color: var(--amarillo); }
-
-/* -----------------SERVICIOS FINAL----------------- SKILLS INICIO -----------------*/
 /* -----------------SKILLS FINAL----------------- RESPONSIVE INICIO -----------------*/
 @media (max-width: 768px) {
   /* NAV BAR */
