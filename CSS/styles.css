@@ -368,7 +368,7 @@ ul {
     text-align: left; } }
 
 /* -----------------RESPONSIVE FINAL---------------------------------------------*/
-.boton, .boton--contacto {
+.boton, .boton--contacto, .boton--portafolio {
   display: inline-block;
   padding: 10px;
   width: 200px;
@@ -379,8 +379,9 @@ ul {
   text-transform: uppercase;
   transition: all 0.3s ease;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer; }
-  .boton:hover, .boton--contacto:hover {
+  .boton:hover, .boton--contacto:hover, .boton--portafolio:hover {
     border: 3px solid var(--amarillo);
     background-color: var(--amarillo);
     color: var(--azul);
@@ -388,4 +389,16 @@ ul {
 
 .boton--contacto {
   width: 100%;
-  padding: 1rem; }
+  border: 3px solid var(--amarillo);
+  background-color: var(--amarillo);
+  color: var(--azul); }
+  .boton--contacto:hover {
+    border: 3px solid var(--azul);
+    background-color: var(--azul);
+    color: var(--primario); }
+
+.boton--portafolio {
+  width: 100%;
+  border: 3px solid var(--cyan);
+  background-color: var(--cyan);
+  color: var(--primario); }

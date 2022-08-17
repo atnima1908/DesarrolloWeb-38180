@@ -9,18 +9,36 @@
     text-transform: uppercase;
     transition: all 0.3s ease;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
 
     &:hover {
         border: 3px solid var(--amarillo);
         background-color: var(--amarillo);
         color: var(--azul);
-        font-weight: bold
+        font-weight: bold;
     }
 }
 
 .boton--contacto {
     @extend .boton;
     width: 100%;
-    padding: 1rem;
+    // padding: 1rem;
+    border: 3px solid var(--amarillo);
+    background-color: var(--amarillo);
+    color: var(--azul);
+
+    &:hover {
+        border: 3px solid var(--azul);
+        background-color: var(--azul);
+        color: var(--primario);
+    }
+}
+
+.boton--portafolio {
+    @extend .boton;
+    width: 100%;
+    border: 3px solid var(--cyan);
+    background-color: var(--cyan);
+    color: var(--primario);
 }
