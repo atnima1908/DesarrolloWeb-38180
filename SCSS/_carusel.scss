@@ -1,63 +1,71 @@
 .banner-portafolio {
-    background-color: var(--primario);
+  background-color: var(--primario);
+}
+
+.carusel-portafolio {
+  width: 90%;
+}
+
+.owl-carousel img {
+  height: 40vh;
+  width: 100%;
+  color: #f4872f;
+}
+
+.owl-prev {
+  left: -30px;
+}
+
+.owl-next {
+  right: -30px;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 150px;
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 80px;
+  color: var(--cyan);
+
+  &:hover {
+    color: var(--amarillo);
   }
-  
-  .owl-carousel img {
-    height: 40vh;
-    width: 100%;
-    color: #f4872f;
-  }
-  
-  .owl-prev {
-    left: -30px;
-  }
-  
-  .owl-next {
-    right: -30px;
-  }
-  
-  .owl-prev,
-  .owl-next {
-    position: absolute;
-    top: 150px;
-  }
-  
-  .owl-prev span,
-  .owl-next span {
-    font-size: 80px;
-    color: black;
-  }
-  
-  .owl-theme,
-  .owl-nav[class*="owl-"]:hover {
-    background: none;
-  }
-  
-  /* CARDS DEL CARRUSEL */
-  
-  .card-body i {
-    font-size: 25px;
-    padding: 15px;
-  }
-  
-  .html {
-    color: orangered;
-  }
-  
-  .css {
-    color: #1c8ee4;
-  }
-  
-  .js {
-    color: #caca61f3;
-  }
-  
-  .sass {
-    color: #c17f8a;
-  }
-  
-  .newsletter {
-    background-color: var(--azul);
-    color: var(--primario);
-  }
-  
+}
+
+.owl-theme,
+.owl-nav[class*="owl-"]:hover {
+  background: none;
+}
+
+/* CARDS DEL CARRUSEL */
+
+.card-body i {
+  font-size: 25px;
+  padding: 15px;
+}
+
+.html {
+  color: orangered;
+}
+
+.css {
+  color: #1c8ee4;
+}
+
+.js {
+  color: #caca61f3;
+}
+
+.sass {
+  color: #c17f8a;
+}
+
+.newsletter {
+  background-color: var(--azul);
+  color: var(--primario);
+  width: 100%;
+}

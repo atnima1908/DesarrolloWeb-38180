@@ -1,57 +1,73 @@
   /* -----------------SKILLS FINAL----------------- RESPONSIVE INICIO -----------------*/
-  
+
   @media(max-width:768px) {
-  
+
     /* NAV BAR */
     .top ul,
     .footer,
     .copyright {
       display: none;
     }
-  
+
     .bottom {
       display: block;
     }
-  
-  
-  
-  
+
+    // .container-contacto,
+    .wrapper-grid {
+      margin-bottom: 40px;
+    }
+    
+    .tools,
+    .newsletter {
+      margin-bottom: 70px;
+      // width: 100%;
+    }
+
+
   }
-  
+
   @media(max-width:600px) {
-  
+
     .bottom {
       display: block;
     }
-  
-  
+
+
     /* CONTACT */
     .container {
       margin-bottom: 70px;
     }
-  
+
+    .newsletter{
+    // .container-contacto {
+      margin-bottom: 15px;
+      font-size: 5px;
+    }
+
+
   }
-  
-  
+
+
   @media(min-width:600px) {
-  
+
     /* CONTACT */
     .wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
-  
+
     .wrapper>* {
       padding: 2em;
     }
-  
+
     .company-info h3,
     .company-info ul,
     .brand {
       text-align: left;
     }
-  
-  
+
+
   }
-  
+
   /* -----------------RESPONSIVE FINAL---------------------------------------------*/
