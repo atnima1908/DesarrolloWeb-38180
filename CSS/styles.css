@@ -74,9 +74,10 @@ li {
     transition: 0.8s; }
 
 #scrollspy-footer .bi {
-  background-color: var();
-  color: var(--amarillo);
+  color: var(--primario);
   margin: 10px 10px; }
+  #scrollspy-footer .bi:hover {
+    color: var(--amarillo); }
 
 /* COPYRIGHT- REVISADO */
 .copyright {
@@ -305,6 +306,7 @@ ul {
   color: var(--amarillo); }
 
 .wrapper {
+  padding-top: 20px;
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); }
 
 .wrapper > * {

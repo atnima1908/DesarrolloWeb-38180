@@ -23,9 +23,12 @@
 
 
 #scrollspy-footer .bi {
-    background-color: var();
-    color: var(--amarillo);
+    color: var(--primario);
     margin: 10px 10px;
+
+    &:hover {
+        color: var(--amarillo);
+    }
 }
 
 /* COPYRIGHT- REVISADO */

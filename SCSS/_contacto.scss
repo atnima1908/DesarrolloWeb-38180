@@ -19,6 +19,7 @@ ul {
 }
 
 .wrapper {
+    padding-top: 20px;
     box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
@@ -66,29 +67,5 @@ ul {
         padding: 1em;
         border: 1px solid var(--cyan);
     }
-
-    // button {
-    //     width: 100%;
-    //     padding: 1em;
-    //     border: 1px solid var(--amarillo);
-    // }
-
-
-    // button {
-    //     background: var(--amarillo);
-    //     color: var(--azul);
-    //     font-weight: bold;
-    //     border: 0;
-    //     text-transform: uppercase;
-
-    //     &:focus,
-    //     :hover {
-    //         background: var(--azul);
-    //         color: var(--amarillo);
-    //         font-weight: bold;
-    //         outline: 0;
-    //         transition: background-color 0.3s ease-out;
-    //     }
-    // }
 
 }
