@@ -303,9 +303,13 @@ li {
   background-color: var(--azul);
   color: var(--primario);
   width: 100%; }
+  @media only screen and (max-width: 600px) {
+    .newsletter {
+      margin-bottom: 15px;
+      font-size: 5px; } }
   @media only screen and (max-width: 768px) {
     .newsletter {
-      padding-bottom: 70px; } }
+      margin-bottom: 70px; } }
 
 .banner-servicios img {
   width: 500px;
@@ -318,6 +322,9 @@ li {
   grid-template-columns: repeat(auto-fit, 20rem);
   justify-content: center;
   padding: 30px; }
+  @media only screen and (max-width: 768px) {
+    .wrapper-grid {
+      margin-bottom: 40px; } }
 
 .titulo {
   font-size: 30px; }
@@ -357,6 +364,9 @@ li {
   margin-left: auto;
   margin-right: auto;
   padding: 1em; }
+  @media only screen and (max-width: 600px) {
+    .container {
+      margin-bottom: 70px; } }
 
 ul {
   list-style: none;
@@ -364,6 +374,9 @@ ul {
 
 .brand {
   text-align: center; }
+  @media only screen and (min-width: 600px) {
+    .brand {
+      text-align: left; } }
 
 .company-info h3 {
   color: var(--amarillo); }
@@ -371,9 +384,16 @@ ul {
 .wrapper {
   padding-top: 20px;
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); }
+  @media only screen and (min-width: 600px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
 
 .wrapper > * {
   padding: 1em; }
+  @media only screen and (min-width: 600px) {
+    .wrapper > * {
+      padding: 2em; } }
 
 .company-info {
   background: var(--azul);
@@ -382,6 +402,10 @@ ul {
   .company-info ul {
     text-align: center;
     margin: 0 0 1rem 0; }
+    @media only screen and (min-width: 600px) {
+      .company-info h3,
+      .company-info ul {
+        text-align: left; } }
 
 .contact {
   background: #fff; }
@@ -402,3 +426,7 @@ ul {
     width: 100%;
     padding: 1em;
     border: 1px solid var(--cyan); }
+
+@media only screen and (max-width: 768px) {
+  .tools {
+    margin-bottom: 70px; } }

@@ -13,6 +13,10 @@
     grid-template-columns: repeat(auto-fit, 20rem);
     justify-content: center;
     padding: 30px;
+
+    @include responsive (tablet) {
+        margin-bottom: 40px;
+    }
 }
 
 .titulo {
