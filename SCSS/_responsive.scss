@@ -3,25 +3,24 @@
   @media(max-width:768px) {
 
     /* NAV BAR */
-    .top ul,
-    .footer,
-    .copyright {
-      display: none;
-    }
+    // .top ul,
+    // .footer,
+    // .copyright {
+    //   display: none;
+    // }
 
-    .bottom {
-      display: block;
-    }
+    // .bottom {
+    //   display: block;
+    // }
 
-    // .container-contacto,
+
     .wrapper-grid {
       margin-bottom: 40px;
     }
-    
+
     .tools,
     .newsletter {
       margin-bottom: 70px;
-      // width: 100%;
     }
 
 
@@ -39,8 +38,7 @@
       margin-bottom: 70px;
     }
 
-    .newsletter{
-    // .container-contacto {
+    .newsletter {
       margin-bottom: 15px;
       font-size: 5px;
     }

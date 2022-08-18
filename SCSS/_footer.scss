@@ -1,6 +1,11 @@
+@import "breakpoints"; 
+
 .footer {
     background-color: #06919a;
     display: flex;
+    @include responsive (tablet) {
+        display: none;
+    }
 }
 
 .social-media .icon {
@@ -44,5 +49,9 @@
     span {
         color: #FCA311;
         font-weight: bold;
+    }
+    
+    @include responsive (tablet) {
+        display: none;
     }
 }

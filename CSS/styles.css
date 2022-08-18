@@ -54,9 +54,49 @@ li {
     font-weight: bold;
     transition: 0.8s; }
 
+/*MIXIN*/
+.boton, .boton--contacto, .boton--portafolio {
+  display: inline-block;
+  padding: 10px;
+  width: 200px;
+  border: 3px solid var(--azul);
+  background-color: var(--azul);
+  color: var(--primario);
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer; }
+  .boton:hover, .boton--contacto:hover, .boton--portafolio:hover {
+    border: 3px solid var(--amarillo);
+    background-color: var(--amarillo);
+    color: var(--azul);
+    font-weight: bold; }
+
+.boton--contacto {
+  width: 100%;
+  border: 3px solid var(--amarillo);
+  background-color: var(--amarillo);
+  color: var(--azul); }
+  .boton--contacto:hover {
+    border: 3px solid var(--azul);
+    background-color: var(--azul);
+    color: var(--primario); }
+
+.boton--portafolio {
+  width: 100%;
+  border: 3px solid var(--cyan);
+  background-color: var(--cyan);
+  color: var(--primario); }
+
+/*EXTEND + EMMET*/
 .footer {
   background-color: #06919a;
   display: flex; }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      display: none; } }
 
 .social-media .icon {
   height: 40px;
@@ -90,6 +130,9 @@ li {
   .copyright span {
     color: #FCA311;
     font-weight: bold; }
+  @media only screen and (max-width: 768px) {
+    .copyright {
+      display: none; } }
 
 /* NAV BAR TOP - DESKTOP  */
 .top {
@@ -143,6 +186,10 @@ li {
     padding-bottom: 4px;
     transition: all .3s; }
 
+@media only screen and (max-width: 768px) {
+  .top ul {
+    display: none; } }
+
 .selected {
   background: var(--azul);
   padding: 5px;
@@ -188,6 +235,12 @@ li {
       border-radius: 50%;
       border: 3px solid var(--amarillo);
       transition: all 0.3s; }
+  @media only screen and (max-width: 600px) {
+    .bottom {
+      display: block; } }
+  @media only screen and (max-width: 768px) {
+    .bottom {
+      display: block; } }
 
 .container-home h1 span {
   color: var(--amarillo); }
@@ -250,6 +303,9 @@ li {
   background-color: var(--azul);
   color: var(--primario);
   width: 100%; }
+  @media only screen and (max-width: 768px) {
+    .newsletter {
+      padding-bottom: 70px; } }
 
 .banner-servicios img {
   width: 500px;
@@ -346,76 +402,3 @@ ul {
     width: 100%;
     padding: 1em;
     border: 1px solid var(--cyan); }
-
-/* -----------------SKILLS FINAL----------------- RESPONSIVE INICIO -----------------*/
-@media (max-width: 768px) {
-  /* NAV BAR */
-  .top ul,
-  .footer,
-  .copyright {
-    display: none; }
-  .bottom {
-    display: block; }
-  .wrapper-grid {
-    margin-bottom: 40px; }
-  .tools,
-  .newsletter {
-    margin-bottom: 70px; } }
-
-@media (max-width: 600px) {
-  .bottom {
-    display: block; }
-  /* CONTACT */
-  .container {
-    margin-bottom: 70px; }
-  .newsletter {
-    margin-bottom: 15px;
-    font-size: 5px; } }
-
-@media (min-width: 600px) {
-  /* CONTACT */
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-  .wrapper > * {
-    padding: 2em; }
-  .company-info h3,
-  .company-info ul,
-  .brand {
-    text-align: left; } }
-
-/* -----------------RESPONSIVE FINAL---------------------------------------------*/
-.boton, .boton--contacto, .boton--portafolio {
-  display: inline-block;
-  padding: 10px;
-  width: 200px;
-  border: 3px solid var(--azul);
-  background-color: var(--azul);
-  color: var(--primario);
-  border-radius: 30px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer; }
-  .boton:hover, .boton--contacto:hover, .boton--portafolio:hover {
-    border: 3px solid var(--amarillo);
-    background-color: var(--amarillo);
-    color: var(--azul);
-    font-weight: bold; }
-
-.boton--contacto {
-  width: 100%;
-  border: 3px solid var(--amarillo);
-  background-color: var(--amarillo);
-  color: var(--azul); }
-  .boton--contacto:hover {
-    border: 3px solid var(--azul);
-    background-color: var(--azul);
-    color: var(--primario); }
-
-.boton--portafolio {
-  width: 100%;
-  border: 3px solid var(--cyan);
-  background-color: var(--cyan);
-  color: var(--primario); }

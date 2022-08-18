@@ -1,10 +1,20 @@
+// CONSTANTES EN EL PROYETO
 @import "variables";
 @import "generales";
+@import "breakpoints";
+/*MIXIN*/
+
+// SE REPITEN EN TODAS LAS PAGINAS
+@import "botones";
+/*EXTEND + EMMET*/
 @import "footer";
 @import "navbar";
+
+// PAGINAS
 @import "home";
 @import "carusel";
 @import "servicios";
 @import "contacto";
-@import "responsive";
-@import "botones";
+
+// BORRAR, BREAKPOINTS LA SUSTITUYO CON MIXIN
+// @import "responsive";
