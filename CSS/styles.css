@@ -2,8 +2,7 @@
   --azul: #14213d;
   --cyan: #06919a;
   --amarillo: #FCA311;
-  --primario: #fff;
-  --titulo: arial; }
+  --primario: #fff; }
 
 /* -----------------CORE STYLES INCIO---------------------------------------------*/
 * {
@@ -427,6 +426,84 @@ ul {
     padding: 1em;
     border: 1px solid var(--cyan); }
 
-@media only screen and (max-width: 768px) {
-  .tools {
-    margin-bottom: 70px; } }
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.skills {
+  padding-top: var(-40px);
+  padding-bottom: var(40px);
+  background-color: var(--primario);
+  text-align: center; }
+  .skills p {
+    font-size: 18px;
+    color: black;
+    font-weight: 400; }
+  .skills h2 span {
+    color: var(--cyan); }
+  .skills h2 {
+    font-size: 35px;
+    color: var(--azul);
+    padding-bottom: 20px; }
+  .skills .text {
+    padding-bottom: 20px; }
+
+.skills .skill-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 60px;
+  margin-bottom: 70px;
+  margin-top: 60px; }
+  .skills .skill-card .card {
+    padding: 25px;
+    text-align: center;
+    background-color: var(--azul);
+    border: 2px solid var(--cyan);
+    color: var(--primario);
+    transition: 1s;
+    position: relative; }
+
+.skills .card i {
+  font-size: 42px;
+  padding: 15px;
+  width: 75px;
+  height: 75px;
+  color: black;
+  background-color: var(--cyan);
+  position: absolute;
+  top: calc(-75px / 2);
+  transform: rotate(45deg);
+  left: 39%;
+  transition: 1s;
+  border: 1px solid var(--cyan); }
+
+.skills .card p {
+  line-height: 1.7;
+  font-size: 16px;
+  color: var(--primario); }
+
+.skills .card h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--amarillo); }
+
+.skills .card:hover {
+  background-color: transparent;
+  border: 2px solid var(--amarillo); }
+  .skills .card:hover i {
+    transform: rotate(0deg);
+    background-color: var(--azul);
+    border: 1px solid var(--amarillo);
+    color: var(--primario); }
+
+.skills .card:hover p {
+  color: black;
+  transition: 1s; }
+
+.skills .card:hover h4 {
+  color: var(--cyan);
+  transition: 1s; }
