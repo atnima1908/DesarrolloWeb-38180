@@ -1,8 +1,19 @@
-@import "breakpoints"; 
+@import "breakpoints";
 
 .container-home {
-    h1 span {
-        color: var(--amarillo);
+
+    h1 {
+        span {
+            color: var(--amarillo);
+        }
+    }
+
+    p {
+        span {
+            color: var(--cyan);
+            font-weight: bold;
+            font-size: 15px;
+        }
     }
 
     h4 {

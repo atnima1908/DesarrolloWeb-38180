@@ -244,6 +244,11 @@ li {
 .container-home h1 span {
   color: var(--amarillo); }
 
+.container-home p span {
+  color: var(--cyan);
+  font-weight: bold;
+  font-size: 15px; }
+
 .container-home h4 {
   color: var(--cyan); }
 
@@ -477,7 +482,8 @@ ul {
   transform: rotate(45deg);
   left: 39%;
   transition: 1s;
-  border: 1px solid var(--cyan); }
+  border: 1px solid var(--cyan);
+  border-radius: 20%; }
 
 .skills .card p {
   line-height: 1.7;
@@ -507,3 +513,35 @@ ul {
 .skills .card:hover h4 {
   color: var(--cyan);
   transition: 1s; }
+
+.typewriter h1 {
+  border-right: 1px solid var(--cyan);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 490px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(25) 1s 1 normal both;
+  padding-bottom: 5px; }
+
+.typewriter #line-1 {
+  border-right: 1px solid var(--cyan);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 425px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(40) 1s 1 normal both;
+  animation-delay: 3.5s;
+  padding: 1px; }
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+    border-right: none; }
+  0.1% {
+    border-right: 1px solid gainsboro; }
+  99.9% {
+    border-right: 1px solid gainsboro; }
+  100% {
+    border: none; } }
