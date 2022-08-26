@@ -252,6 +252,14 @@ li {
 .container-home h4 {
   color: var(--cyan); }
 
+@media only screen and (max-width: 768px) {
+  .container-home .typewriter h1 {
+    font-size: 8px; } }
+
+@media only screen and (max-width: 768px) {
+  .container-home .typewriter p {
+    font-size: 2px; } }
+
 .banner-portafolio {
   background-color: var(--primario); }
 

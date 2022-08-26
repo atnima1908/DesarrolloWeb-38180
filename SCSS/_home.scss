@@ -20,4 +20,17 @@
         color: var(--cyan);
     }
 
+    .typewriter {
+        h1 {
+            @include responsive (tablet) {
+                font-size: 8px;
+            }
+        }
+
+        p {
+            @include responsive (tablet) {
+                font-size: 2px;
+            }
+        }
+    }
 }
