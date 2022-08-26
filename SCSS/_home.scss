@@ -20,23 +20,64 @@
         color: var(--cyan);
     }
 
-    .typewriter {
-        h1 {
-            @include responsive (tablet) {
-                font-size: 24px;
-            }
+}
+
+
+
+.typewriter {
+    h1 {
+        border-right: 1px solid var(--cyan);
+        white-space: nowrap;
+        overflow: hidden;
+        width: 490px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typewriter 2s steps(25) 1s 1 normal both;
+        padding-bottom: 5px;
+
+        @include responsive (tablet) {
+            font-size: 24px;
+        }
+    }
+
+    #line-1 {
+        border-right: 1px solid var(--cyan);
+        white-space: nowrap;
+        overflow: hidden;
+        width: 425px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typewriter 3s steps(40) 1s 1 normal both;
+        animation-delay: 3.5s;
+        padding: 1px;
+
+        @include responsive (tablet) {
+            display: none;
         }
 
-        #line-1 {
+        span {
             @include responsive (tablet) {
                 font-size: 11px;
             }
         }
+    }
+}
 
-        #line-1 span {
-            @include responsive (tablet) {
-                font-size: 11px;
-            }
-        }
+@keyframes typewriter {
+    0% {
+        width: 0;
+        border-right: none;
+    }
+
+    0.1% {
+        border-right: 1px solid rgb(220, 220, 220);
+    }
+
+    99.9% {
+        border-right: 1px solid rgb(220, 220, 220);
+    }
+
+    100% {
+        border: none;
     }
 }

@@ -252,17 +252,46 @@ li {
 .container-home h4 {
   color: var(--cyan); }
 
-@media only screen and (max-width: 768px) {
-  .container-home .typewriter h1 {
-    font-size: 24px; } }
+.typewriter h1 {
+  border-right: 1px solid var(--cyan);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 490px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(25) 1s 1 normal both;
+  padding-bottom: 5px; }
+  @media only screen and (max-width: 768px) {
+    .typewriter h1 {
+      font-size: 24px; } }
 
-@media only screen and (max-width: 768px) {
-  .container-home .typewriter #line-1 {
-    font-size: 11px; } }
+.typewriter #line-1 {
+  border-right: 1px solid var(--cyan);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 425px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(40) 1s 1 normal both;
+  animation-delay: 3.5s;
+  padding: 1px; }
+  @media only screen and (max-width: 768px) {
+    .typewriter #line-1 {
+      display: none; } }
+  @media only screen and (max-width: 768px) {
+    .typewriter #line-1 span {
+      font-size: 11px; } }
 
-@media only screen and (max-width: 768px) {
-  .container-home .typewriter #line-1 span {
-    font-size: 11px; } }
+@keyframes typewriter {
+  0% {
+    width: 0;
+    border-right: none; }
+  0.1% {
+    border-right: 1px solid gainsboro; }
+  99.9% {
+    border-right: 1px solid gainsboro; }
+  100% {
+    border: none; } }
 
 .banner-portafolio {
   background-color: var(--primario); }
@@ -525,35 +554,3 @@ ul {
 .skills .card:hover h4 {
   color: var(--cyan);
   transition: 1s; }
-
-.typewriter h1 {
-  border-right: 1px solid var(--cyan);
-  white-space: nowrap;
-  overflow: hidden;
-  width: 490px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 2s steps(25) 1s 1 normal both;
-  padding-bottom: 5px; }
-
-.typewriter #line-1 {
-  border-right: 1px solid var(--cyan);
-  white-space: nowrap;
-  overflow: hidden;
-  width: 425px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 3s steps(40) 1s 1 normal both;
-  animation-delay: 3.5s;
-  padding: 1px; }
-
-@keyframes typewriter {
-  0% {
-    width: 0;
-    border-right: none; }
-  0.1% {
-    border-right: 1px solid gainsboro; }
-  99.9% {
-    border-right: 1px solid gainsboro; }
-  100% {
-    border: none; } }
