@@ -23,13 +23,19 @@
     .typewriter {
         h1 {
             @include responsive (tablet) {
-                font-size: 8px;
+                font-size: 24px;
             }
         }
 
-        p {
+        #line-1 {
             @include responsive (tablet) {
-                font-size: 2px;
+                font-size: 11px;
+            }
+        }
+
+        #line-1 span {
+            @include responsive (tablet) {
+                font-size: 11px;
             }
         }
     }

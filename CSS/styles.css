@@ -254,11 +254,15 @@ li {
 
 @media only screen and (max-width: 768px) {
   .container-home .typewriter h1 {
-    font-size: 8px; } }
+    font-size: 24px; } }
 
 @media only screen and (max-width: 768px) {
-  .container-home .typewriter p {
-    font-size: 2px; } }
+  .container-home .typewriter #line-1 {
+    font-size: 11px; } }
+
+@media only screen and (max-width: 768px) {
+  .container-home .typewriter #line-1 span {
+    font-size: 11px; } }
 
 .banner-portafolio {
   background-color: var(--primario); }
