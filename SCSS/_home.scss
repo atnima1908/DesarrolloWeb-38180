@@ -52,7 +52,8 @@
         padding: 1px;
 
         @include responsive (tablet) {
-            display: none;
+            font-size: 11px;
+            max-width: 300px;
         }
 
         span {

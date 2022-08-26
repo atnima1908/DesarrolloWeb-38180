@@ -277,7 +277,8 @@ li {
   padding: 1px; }
   @media only screen and (max-width: 768px) {
     .typewriter #line-1 {
-      display: none; } }
+      font-size: 11px;
+      max-width: 300px; } }
   @media only screen and (max-width: 768px) {
     .typewriter #line-1 span {
       font-size: 11px; } }
