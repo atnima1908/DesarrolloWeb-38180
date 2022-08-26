@@ -36,7 +36,9 @@
         padding-bottom: 5px;
 
         @include responsive (tablet) {
-            font-size: 24px;
+            font-size: 18px;
+            max-width: 300px;
+
         }
     }
 
@@ -52,13 +54,13 @@
         padding: 1px;
 
         @include responsive (tablet) {
-            font-size: 11px;
-            max-width: 300px;
+            font-size: 9px;
+            // max-width: 300px;
         }
 
         span {
             @include responsive (tablet) {
-                font-size: 11px;
+                font-size: 9px;
             }
         }
     }
