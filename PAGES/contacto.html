@@ -13,8 +13,8 @@
         content="Alma Digital ofrece servicios digitales de desarrollo de sitios y aplicaciones web para emprendedores">
     <meta name="keywords" content="HTML, JS, CSS, SASS, WEB, DESARROLLO WEB, DISEÑO, UX/UI, BRANDING, SITIO WEB">
 
-    
-    <title>INDEX</title>
+
+    <title>CONTACTO</title>
 
     <!--BOOTSTRAP & CSS INCICIO----------------------------------------------------------------------------------------->
 
@@ -23,6 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--BOOTSTRAP & CSS FINAL----------------------------------------------------------------------------------------->
 
@@ -41,7 +42,7 @@
                     <li><a href="../index.html">HOME</a></li>
                     <li><a href="tools.html">Toolkit</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="portafolio.html">Proyectos</a></li>
                     <li><a href="contacto.html" class="selected">Contacto</a></li>
                 </ul>
             </div>
@@ -50,18 +51,18 @@
 
     <nav class="bottom">
         <ul class="bottomUl">
-            <li class="SERVICIOS"><a href="servicios.html"><i class="fas fa-book"></i></a></li>
-            <li class="TOOLS"><a href="tools.html"><i class="fa-solid fa-tools"></i></a></li>
-            <li class="HOME"><a href="../index.html"><i class="fas fa-home"></i></a></li>
-            <li class="PORTAFOLIO"><a href="portafolio.html"><i class="fas fa-code"></i></a></li>
-            <li class="CONTACTO"><a href="contacto.html"><i class="fas fa-message"></i></a></li>
+            <li><a href="../index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="servicios.html"><i class="fas fa-book"></i></a></li>
+            <li><a href="tools.html"><i class="fa-solid fa-tools"></i></a></li>
+            <li><a href="portafolio.html"><i class="fas fa-code"></i></a></li>
+            <li><a href="contacto.html"><i class="fas fa-message"></i></a></li>
         </ul>
     </nav>
 
 
     <!-- NAV BAR FINAL------------------------------------------------------------------------------------------------------------------------->
 
-    <div class="container container-contacto">
+    <div class="container container-contacto " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <img src="" alt="">
 
         <div> </div>
@@ -103,7 +104,6 @@
                         <textarea name="message" rows="5"></textarea>
                     </p>
                     <p class="full border-0">
-                        <!-- <button class="boton--enviar">Enviar</button> -->
                         <button class="boton--contacto">Enviar</button>
 
                     </p>
@@ -116,7 +116,7 @@
     <!--------------------------------------------------------------------------------------------------------------------------->
 
     <!-- FOOTER SECTION START -->
-    <footer class="footer" id="scrollspy-footer" class=" p-3 bg-dark text-white text-center position-relative">
+    <footer class="footer" class="position-relative">
         <div class="container">
             <div class="social-media">
                 <i class="icon fa-brands fa-instagram"></i>
@@ -127,18 +127,21 @@
                 <i class="icon fa-solid fa-at"></i>
             </div>
         </div>
-        <a href="#" class="bottom-0 end-0 p-3">
+        <!-- <a href="#" class="bottom-0 end-0 p-3"> -->
+        <a id="footer-up" href="#" class="bottom-0 end-0 p-3">
             <i class="bi bi-arrow-up-circle h1"></i>
         </a>
     </footer>
     <div class="copyright">
         Copyright &copy; 2022 - Diseño Web Realizado por <span>Aminta S. Largaespada</span>
     </div>
-
     <!-- FOOTER END -->
 
     <!--------------------------------------------------------------------------------------------------------------------------->
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

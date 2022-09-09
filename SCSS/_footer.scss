@@ -1,10 +1,12 @@
-@import "breakpoints"; 
+@import "breakpoints";
 
 .footer {
     background-color: #06919a;
     display: flex;
+
     @include responsive (tablet) {
         display: none;
+        padding-top: 40px;
     }
 }
 
@@ -27,7 +29,7 @@
 }
 
 
-#scrollspy-footer .bi {
+#footer-up .bi {
     color: var(--primario);
     margin: 10px 10px;
 
@@ -50,7 +52,7 @@
         color: #FCA311;
         font-weight: bold;
     }
-    
+
     @include responsive (tablet) {
         display: none;
     }

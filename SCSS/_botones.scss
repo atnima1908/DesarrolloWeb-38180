@@ -59,7 +59,7 @@
     &:hover {
         border: 3px solid var(--azul);
         background-color: var(--azul);
-        color: var(--cyan);
+        color: var(--amarillo);
         font-weight: bold;
     }
 }
@@ -67,7 +67,6 @@
 .boton--contacto {
     @extend .boton;
     width: 100%;
-    // padding: 1rem;
     border: 3px solid var(--amarillo);
     background-color: var(--amarillo);
     color: var(--azul);
@@ -86,5 +85,3 @@
     background-color: var(--cyan);
     color: var(--primario);
 }
-
-// .btn-servicios:hover {}

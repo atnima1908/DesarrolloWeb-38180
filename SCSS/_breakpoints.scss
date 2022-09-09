@@ -1,18 +1,33 @@
-
 @mixin responsive ($breakpoint) {
-    @if $breakpoint == phone {
+    @if $breakpoint ==phone {
         @media only screen and (max-width: 600px) {
             @content
-        };
+        }
+
+        ;
     }
-    @if $breakpoint == tablet {
+
+    @if $breakpoint ==tablet {
         @media only screen and (max-width: 768px) {
             @content
-        };
+        }
+
+        ;
     }
-    @if $breakpoint == desktop {
+
+    @if $breakpoint ==desktop {
         @media only screen and (min-width: 600px) {
             @content
-        };
+        }
+
+        ;
+    }
+
+    @if $breakpoint ==dispositivo {
+        @media only screen and (min-width: 768px) and (max-width: 822px) {
+            @content
+        }
+
+        ;
     }
 }

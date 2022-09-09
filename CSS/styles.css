@@ -108,7 +108,7 @@ li {
   .botoncito2:hover {
     border: 3px solid var(--azul);
     background-color: var(--azul);
-    color: var(--cyan);
+    color: var(--amarillo);
     font-weight: bold; }
 
 .boton--contacto {
@@ -133,7 +133,8 @@ li {
   display: flex; }
   @media only screen and (max-width: 768px) {
     .footer {
-      display: none; } }
+      display: none;
+      padding-top: 40px; } }
 
 .social-media .icon {
   height: 40px;
@@ -150,10 +151,10 @@ li {
     color: #06919a;
     transition: 0.8s; }
 
-#scrollspy-footer .bi {
+#footer-up .bi {
   color: var(--primario);
   margin: 10px 10px; }
-  #scrollspy-footer .bi:hover {
+  #footer-up .bi:hover {
     color: var(--amarillo); }
 
 /* COPYRIGHT- REVISADO */
@@ -222,6 +223,9 @@ li {
     border-radius: 4px;
     padding-bottom: 4px;
     transition: all .3s; }
+  @media only screen and (min-width: 768px) and (max-width: 822px) {
+    .top ul a {
+      font-size: 11px; } }
 
 @media only screen and (max-width: 768px) {
   .top ul {
@@ -238,7 +242,7 @@ li {
   height: 60px;
   background-color: var(--cyan);
   position: fixed;
-  z-index: 3;
+  z-index: 5;
   bottom: 0;
   border-radius: 30px 30px 0 0;
   display: none; }
@@ -279,69 +283,25 @@ li {
     .bottom {
       display: block; } }
 
-.container-home h1 span {
-  color: var(--amarillo); }
-
-.container-home p span {
-  color: var(--cyan);
-  font-weight: bold;
-  font-size: 15px; }
-
-.container-home h4 {
-  color: var(--cyan); }
-
-.container-home img {
-  display: block;
-  width: 100%;
-  height: auto; }
-
-.typewriter h1 {
-  border-right: 1px solid var(--cyan);
-  white-space: nowrap;
-  overflow: hidden;
-  width: 490px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 2s steps(25) 1s 1 normal both;
-  padding-bottom: 5px; }
-  @media only screen and (max-width: 768px) {
-    .typewriter h1 {
-      font-size: 18px;
-      max-width: 300px; } }
-
-.typewriter #line-1 {
-  border-right: 1px solid var(--cyan);
-  white-space: nowrap;
-  overflow: hidden;
-  width: 425px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 3s steps(40) 1s 1 normal both;
-  animation-delay: 3.5s;
-  padding: 1px; }
-  @media only screen and (max-width: 768px) {
-    .typewriter #line-1 {
-      font-size: 9px; } }
-  @media only screen and (max-width: 768px) {
-    .typewriter #line-1 span {
-      font-size: 9px; } }
-
-@keyframes typewriter {
-  0% {
-    width: 0;
-    border-right: none; }
-  0.1% {
-    border-right: 1px solid gainsboro; }
-  99.9% {
-    border-right: 1px solid gainsboro; }
-  100% {
-    border: none; } }
-
-.banner-portafolio {
-  background-color: var(--primario); }
+.container-home {
+  margin-top: 70px; }
+  .container-home .text-top {
+    padding-top: 20px; }
+    .container-home .text-top h1 span {
+      color: var(--amarillo); }
+    .container-home .text-top p span {
+      color: var(--cyan);
+      font-weight: bold;
+      font-size: 15px; }
+    .container-home .text-top h4 {
+      color: var(--cyan); }
 
 .carusel-portafolio {
-  width: 90%; }
+  width: 90%;
+  margin-top: 70px; }
+  @media only screen and (max-width: 768px) {
+    .carusel-portafolio {
+      margin-bottom: 80px; } }
 
 .owl-carousel img {
   height: 40vh;
@@ -387,18 +347,6 @@ li {
 
 .sass {
   color: #c17f8a; }
-
-.newsletter {
-  background-color: var(--azul);
-  color: var(--primario);
-  width: 100%; }
-  @media only screen and (max-width: 600px) {
-    .newsletter {
-      margin-bottom: 15px;
-      font-size: 5px; } }
-  @media only screen and (max-width: 768px) {
-    .newsletter {
-      margin-bottom: 70px; } }
 
 .banner-servicios img {
   width: 100%; }
@@ -515,17 +463,16 @@ ul {
     padding: 1em;
     border: 1px solid var(--cyan); }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto; }
-
 .skills {
   padding-top: var(-40px);
   padding-bottom: var(40px);
   background-color: var(--primario);
-  text-align: center; }
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px; }
   .skills p {
     font-size: 18px;
     color: black;

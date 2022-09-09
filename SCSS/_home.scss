@@ -1,92 +1,28 @@
 @import "breakpoints";
 
+
 .container-home {
+    margin-top: 70px;
 
-    h1 {
-        span {
-            color: var(--amarillo);
-        }
-    }
+    .text-top {
+        padding-top: 20px;
 
-    p {
-        span {
-            color: var(--cyan);
-            font-weight: bold;
-            font-size: 15px;
-        }
-    }
-
-    h4 {
-        color: var(--cyan);
-    }
-
-    img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-}
-
-
-
-.typewriter {
-    h1 {
-        border-right: 1px solid var(--cyan);
-        white-space: nowrap;
-        overflow: hidden;
-        width: 490px;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typewriter 2s steps(25) 1s 1 normal both;
-        padding-bottom: 5px;
-
-        @include responsive (tablet) {
-            font-size: 18px;
-            max-width: 300px;
-
-        }
-    }
-
-    #line-1 {
-        border-right: 1px solid var(--cyan);
-        white-space: nowrap;
-        overflow: hidden;
-        width: 425px;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typewriter 3s steps(40) 1s 1 normal both;
-        animation-delay: 3.5s;
-        padding: 1px;
-
-        @include responsive (tablet) {
-            font-size: 9px;
-            // max-width: 300px;
-        }
-
-        span {
-            @include responsive (tablet) {
-                font-size: 9px;
+        h1 {
+            span {
+                color: var(--amarillo);
             }
         }
-    }
-}
 
-@keyframes typewriter {
-    0% {
-        width: 0;
-        border-right: none;
-    }
+        p {
+            span {
+                color: var(--cyan);
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
 
-    0.1% {
-        border-right: 1px solid rgb(220, 220, 220);
-    }
-
-    99.9% {
-        border-right: 1px solid rgb(220, 220, 220);
-    }
-
-    100% {
-        border: none;
+        h4 {
+            color: var(--cyan);
+        }
     }
 }

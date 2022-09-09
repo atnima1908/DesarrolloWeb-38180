@@ -1,11 +1,13 @@
 @import "breakpoints";
 
-.banner-portafolio {
-  background-color: var(--primario);
-}
-
 .carusel-portafolio {
   width: 90%;
+  margin-top: 70px;
+
+  @include responsive (tablet) {
+    margin-bottom: 80px;
+  }
+
 }
 
 .owl-carousel img {
@@ -64,19 +66,4 @@
 
 .sass {
   color: #c17f8a;
-}
-
-.newsletter {
-  background-color: var(--azul);
-  color: var(--primario);
-  width: 100%;
-
-  @include responsive (phone) {
-    margin-bottom: 15px;
-    font-size: 5px;
-  }
-
-  @include responsive (tablet) {
-    margin-bottom: 70px;
-  }
 }
